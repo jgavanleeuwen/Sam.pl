@@ -1,0 +1,222 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+body {
+  overflow-y: scroll;
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #999;
+  background: url(../images/svg/circle.svg) no-repeat left center;
+  padding: 7px 4px;
+}
+h1 i {
+  margin-right: 12px;
+  color: #AAA;
+}
+.section {
+  background: #FFF;
+}
+.section.gray {
+  background: #DDD;
+}
+.home .navbar {
+  background: #FFF;
+  box-shadow: none;
+  border-bottom: solid #CCC 1px;
+}
+.home .navbar div,
+.home .navbar ul,
+.home .navbar li,
+.home .navbar a,
+.home .navbar span,
+.home .navbar input {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #999;
+}
+.home .navbar input {
+  border: none;
+  background: #EEE;
+  padding: 4px 6px;
+  margin-top: 10px;
+}
+.hero {
+  background-image: url(../images/hero.png);
+  height: 400px;
+  background-size: cover;
+  margin-top: 50px;
+}
+.hero .meta {
+  color: #FFF;
+}
+.hero .meta .artist {
+  font-weight: 600;
+}
+.hero .herotrack {
+  position: relative;
+  padding: 10px 0;
+  color: #FFF;
+}
+.hero .herotrack .overlay {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.hero .herotrack .overlay .sample {
+  position: relative;
+  height: 100%;
+  width: 140px;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(255, 255, 255, 0.4)), color-stop(51%, rgba(255, 255, 255, 0.35)), color-stop(100%, rgba(255, 255, 255, 0.35)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  left: 60%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border: solid #FFF 1px;
+  border: solid rgba(255, 255, 255, 0.25) 1px;
+  border-bottom: solid #FFF 1px;
+  border-bottom: solid rgba(255, 255, 255, 0.15) 1px;
+}
+.hero .herotrack .overlay .sample .play {
+  width: 30px;
+  height: 30px;
+  float: none;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  margin-top: -15px;
+  position: relative;
+  border-radius: 50%;
+}
+.hero .herotrack .overlay .sample .play i {
+  line-height: 30px;
+}
+.hero .herotrack .overlay .sample .handle {
+  background: #efefef;
+  background: -webkit-linear-gradient(top, #eeeeee, #ccddcc);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccddcc), color-stop(1, #eeeeee));
+  background: -ms-linear-gradient(bottom, #ccddcc, #eeeeee);
+  background: -moz-linear-gradient(center bottom, #ccddcc 0%, #eeeeee 100%);
+  background: -o-linear-gradient(#eeeeee, #ccddcc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ccddcc', GradientType=0);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  font-family: "FontAwesome";
+  font-size: 10px;
+  color: #AAA;
+  padding: 3px 0 0 2px;
+}
+.hero .herotrack .overlay .sample .handle i {
+  position: absolute;
+  text-shadow: 1px 0 #EFEFEF;
+}
+.hero .herotrack .overlay .sample .handle.t-l {
+  left: -9px;
+  top: -9px;
+}
+.hero .herotrack .overlay .sample .handle.t-r {
+  right: -9px;
+  top: -9px;
+}
+.hero .herotrack .overlay .sample .handle.b-l {
+  left: -9px;
+  bottom: -9px;
+}
+.hero .herotrack .overlay .sample .handle.b-r {
+  right: -9px;
+  bottom: -9px;
+}
+.create .well {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.create div.samplebar div.sample {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(50%, rgba(255, 255, 255, 0.4)), color-stop(51%, rgba(255, 255, 255, 0.35)), color-stop(100%, rgba(255, 255, 255, 0.35)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.35) 51%, rgba(255, 255, 255, 0.35) 100%);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border: solid #FFF 1px;
+  border: solid rgba(255, 255, 255, 0.25) 1px;
+  border-bottom: solid #FFF 1px;
+  border-bottom: solid rgba(255, 255, 255, 0.15) 1px;
+  cursor: move;
+}
+.create div.samplebar div.sample .handle {
+  background: #efefef;
+  background: -webkit-linear-gradient(top, #eeeeee, #ccddcc);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccddcc), color-stop(1, #eeeeee));
+  background: -ms-linear-gradient(bottom, #ccddcc, #eeeeee);
+  background: -moz-linear-gradient(center bottom, #ccddcc 0%, #eeeeee 100%);
+  background: -o-linear-gradient(#eeeeee, #ccddcc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ccddcc', GradientType=0);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+  font-family: "FontAwesome";
+  font-size: 10px;
+  color: #AAA;
+  padding: 3px 0 0 3px;
+  cursor: e-resize;
+}
+.create div.samplebar div.sample .handle i {
+  position: absolute;
+  text-shadow: 1px 0 #EFEFEF;
+}
+.create div.samplebar div.sample .handle.t-l {
+  left: -9px;
+  top: -9px;
+}
+.create div.samplebar div.sample .handle.t-r {
+  right: -9px;
+  top: -9px;
+}
+.create div.samplebar div.sample .handle.b-l {
+  left: -9px;
+  bottom: -9px;
+}
+.create div.samplebar div.sample .handle.b-r {
+  right: -9px;
+  bottom: -9px;
+}
+.create .btn-group button .onoff {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  position: relative;
+  top: -2px;
+  border-radius: 50%;
+  background: #666;
+}
+.create .btn-group button .onoff.on {
+  background: green;
+}
+.favourite .bold {
+  font-weight: bold;
+}
+.favourite .container .waveholder {
+  position: relative;
+  margin: 15px 0 35px 0;
+}
+.favourite .container .waveholder .sample {
+  border: solid red 1px;
+}

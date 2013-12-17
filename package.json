@@ -1,0 +1,20 @@
+{
+  "name": "app-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "locomotive": "0.3.x",
+    "express": "3.x.x",
+    "connect-powered-by": "0.1.x",
+    "elasticsearch": "~0.3.12"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-contrib-jshint": "~0.5.1",
+    "grunt-contrib-less": "~0.5.1",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-shell": "~0.2.2",
+    "grunt-html": "~0.3.4",
+    "grunt-contrib-csslint": "~0.1.2"
+  }
+}

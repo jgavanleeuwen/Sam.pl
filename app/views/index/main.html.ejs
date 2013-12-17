@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Title -->
+  	<title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <!-- Bootstrap -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="styles/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+
+    <!-- Custom styles -->
+    <link href="styles/style.css" rel="stylesheet" media="screen">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css"><!-- Open Sans -->
+
+    <!-- FontAwesome -->
+    <link href="styles/font-awesome.css" rel="stylesheet" media="screen">
+
+    <!-- Application -->
+  	<script data-main="js/application/bootstrap" src="js/libs/require/require.js"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+
+    <!-- MENU -->
+  	<section id="home" class="section home">
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="navbar navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">SAM.PL</a>
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="#hero">OVER</a></li>
+                  <li><a href="#create">CREATE</a></li>
+                  <li><a href="#favourite">FAVOURITE</a></li>
+                  <li class="pull-right">
+                    <input type="text" class="pull-right" id="search" placeholder="SEARCH" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container">
+        <div class="row" style="min-height:300px;">
+          <div class="col-md-12 herotrack" id="herotrack" style="top:120px">
+            <div class="overlay">
+              <div class="sample">
+                <div class="handle t-l"><i class="fa fa-reorder fa-rotate-90"></i></div>
+                <div class="handle t-r"><i class="fa fa-reorder fa-rotate-90"></i></div>
+                <div class="handle b-l"><i class="fa fa-reorder fa-rotate-90"></i></div>
+                <div class="handle b-r"><i class="fa fa-reorder fa-rotate-90"></i></div>
+                <div class="play">
+                  <i class="fa fa-play fa-lg"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 meta">
+            <span class="artist">Kenny Dixon Jr.</span> - <span class="title">Shades of Jae</span><br/>
+            <i class="fa fa-heart"></i> <span>951</span>&nbsp;&nbsp;  
+            <i class="fa fa-clock-o"></i> <span>1:05</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATE -->
+    <section id="create" class="section create gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"><h1><i class="fa fa-code fa-fw"></i>Create sample</h1></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><p>This is the place to create..</p></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="waveholder" class="well droparea">
+              <p style="text-align:center;"><span id="dropinfo"><i class="fa fa-arrow-down"></i> Drop your sound-file..</span></p>
+            </div>
+            <div id="samplebar" class="samplebar" style="height:15px;">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="well waveform" style="margin-bottom:15px;"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="btn-group pull-left" id="filters">
+              <button type="button"  class="btn btn-default btn-sm" data-filter="HIGHPASS"><span class="onoff on"></span> high</button>
+              <button type="button"  class="btn btn-default btn-sm" data-filter="BANDPASS"><span class="onoff off"></span> band</button>
+              <button type="button"  class="btn btn-default btn-sm" data-filter="LOWPASS"><span class="onoff off"></span> low</button>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <input id="volume" type="range" min="0" max="20000" step="10" value="10000" style="margin-left:10px;margin-top:6px;" />
+          </div>
+          <div class="col-md-2">
+            <div class="btn-group pull-left" id="volussme">
+              <button type="button"  class="btn btn-default btn-sm" data-filter="RAMPUP"><span class="onoff off"></span> ramp</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-offset-2">
+            <p class="pull-right">
+              <button type="button" id="cancel" class="btn btn-link btn-sm">cancel</button> 
+              <button type="button" id="render" class="btn btn-default btn-sm" disabled >Render</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIST FAVOURITE -->
+    <section id="favourite" class="section favourite">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1><i class="fa fa-heart-o fa-fw"></i>Favourite samples</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURETTE -->
+    <section id="feat" style="padding-top: 70px;color: #AAA;">
+      <div class="container">
+        <hr class="divider" />
+        <div class="row featurette">
+          <div class="col-md-7" style="padding-top:50px;">
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="images/ipad.png" alt="500x500">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer" style="background:#666;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1><i class="fa fa-envelope-o fa-fw"></i>Contact</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </body>
+</html>

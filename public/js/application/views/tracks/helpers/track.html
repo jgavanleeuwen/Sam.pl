@@ -1,0 +1,29 @@
+<div class="row">	
+	<div class="col-md-4">
+		<div class="row">
+			<div class="col-md-3">
+				<% if (cover != '') { %>
+					<img src="<%= cover %>" style="margin-left:15px" width="50" height="50" />
+				<% } else { %>
+					<img src="http://placehold.it/50x50" style="margin-left:15px" width="50" height="50" />
+				<% } %>
+			</div>
+			<div class="col-md-9">
+				<span class="bold"><%= artist %></span><br />
+				<span><%= title %></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2 col-md-offset-6">
+		<div class="pull-right tags" style="padding-top:20px;">
+			<span class="label label-default">Default</span>
+			<span class="label label-default">Hiphop</span>
+			<span class="label label-default">Speech</span>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="waveholder"></div>
+	</div>
+</div>
